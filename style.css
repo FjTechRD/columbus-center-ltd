@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 16px;
+}
+
+hr {
+  margin: 2rem;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.order__form {
+  gap: 1rem;
+  display: flex;
+}
+
+.persona__data {
+  display: flex;
+}
+
+.inp-position {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+/*! FORM STYLES */
+/*! MAIN DATA */
+/*! SPOUSE DATA */
+/*! CONTACT */
+/*! ADDRESS */
+/*! CHECKBOX */
+/*! DEPENDENCIES */
+/*! BALANCE */
+/*! SIGNATURE */
+
+.balance__main-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.balance__content {
+  width: 50%;
+}
+
+.balance__content-values {
+  padding: 0.4rem;
+}
+
+.balance__note {
+  width: 50%;
+}
+
+.signature {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 5rem;
+}

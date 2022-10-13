@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tax Filter | Columbus Center LTD</title>
+  </head>
+  <body>
+    <main class="container">
+      <img src="./img/logo ClmCenterLtd.png" alt="Columbus Center Logotipe" />
+      <p>927 Columbus Avenue New York, NY 10025</p>
+      <p>Tel. No.: 212.678.1052 | Fax No.: 212.678.1551</p>
+      <p>www.columbuscenterent.com</p>
+      <h1>TAX FILER’S PERSONAL DATA FORM</h1>
+      <form action="" class="data__form">
+        <!--! INICIO-Datos Principales  -->
+        <div class="main__data">
+          <div class="order__form">
+            <div class="name inp-position">
+              <label for="name">Name</label>
+              <input type="text" id="name" />
+            </div>
+            <div class="last-name inp-position">
+              <label for="last-name">Lastname</label>
+              <input type="text" id="last-name" />
+            </div>
+          </div>
+          <div class="order__form">
+            <div class="inp-position">
+              <label for="ssn">SS No.</label>
+              <input type="number" id="ssn" />
+            </div>
+            <div class="inp-position">
+              <label for="birdthay">birthday</label>
+              <input type="date" id="birdthay" />
+            </div>
+          </div>
+        </div>
+        <!--! FIN-Datos Principales  -->
+        <hr />
+
+        <!--! INICIO-Datos Conyuge  -->
+        <div class="spouse__data">
+          <div class="order__form">
+            <div class="spouse inp-position">
+              <label for="spouse__name">Spouse Name</label>
+              <input type="text" id="spouse__name" />
+            </div>
+            <div class="last-name inp-position">
+              <label for="spouse__last-name">Spouse Lastname</label>
+              <input type="text" id="spouse__last-name" />
+            </div>
+          </div>
+          <div class="order__form">
+            <div class="inp-position">
+              <label for="spouse__ssn">SS No.</label>
+              <input type="number" id="spouse__ssn" />
+            </div>
+            <div class="inp-position">
+              <label for="spouse__birdthay">birthday</label>
+              <input type="date" id="spouse__birdthay" />
+            </div>
+          </div>
+        </div>
+        <!--! FIN-Datos Conyuge  -->
+        <hr />
+        <!--! INICIO - Tel - Email  -->
+        <div class="contac__data">
+          <div class="order__form">
+            <div class="main__phone inp-position">
+              <label for="telephone">Main Telephone</label>
+              <input type="number" id="telephone" />
+            </div>
+            <div class="second__phone inp-position">
+              <label for="second__telephone">Second Telephone</label>
+              <input type="number" id="second__telephone" />
+            </div>
+          </div>
+        </div>
+        <div class="contac__data inp-position">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" />
+        </div>
+        <!--! FIN - Tel - Email  -->
+        <hr />
+        <!--! INICIO - Dirrecion  -->
+        <div class="address__data">
+          <div class="adrres inp-position">
+            <label for="address">address</label>
+            <input type="text" id="address" />
+          </div>
+          <div class="order__form">
+            <div class="address__info inp-position">
+              <label for="city">City</label>
+              <input type="text" id="city" />
+            </div>
+            <div class="address__info inp-position">
+              <label for="state">State</label>
+              <input type="text" id="state" />
+            </div>
+            <div class="address__info inp-position">
+              <label for="zip__code">Zip Code</label>
+              <input type="text" id="zip__code" />
+            </div>
+          </div>
+        </div>
+        <!--! FIN - Dirrecion  -->
+        <hr />
+        <!--! INICIO - CheckBox  -->
+        <div class="checkbox__data">
+          <div>
+            <label
+              ><input type="checkbox" id="cbox1" value="first_checkbox" />
+              Casado/a</label
+            >
+            <label
+              ><input type="checkbox" id="cbox2" value="second_checkbox" />
+              Soltero/a</label
+            >
+            <label
+              ><input type="checkbox" id="cbox2" value="third_checkbox" />
+              Cabeza Familia</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                id="cbox2"
+                value="forth_checkbox"
+              />QW</label
+            >
+            <label
+              ><input type="checkbox" id="cbox2" value="fifth_checkbox" />Casado
+              SP</label
+            >
+          </div>
+          <br />
+          <div>
+            <label for="tp-form">Tipo de Formulario</label>
+            <input type="text" id="tp-form" />
+          </div>
+        </div>
+        <!--! FIN - CheckBox  -->
+        <hr />
+        <!--! INICIO - dependencies  -->
+        <div class="depedencies__data">
+          <h3>Dependientes</h3>
+          <textarea name="" id="" cols="80" rows="5"></textarea>
+          <p>
+            Yo afirmo que la informacion que aparece en este documento es
+            correcta y que yo tambien certifico que soy responsable por todos
+            datos que aparecen en todos documentos relacionado a declaracion de
+            inpuesto preparado por Columbus Center Enterprise Ltd. Toda
+            informacion contenida en estos documentos son exclusivo para el ano
+            fiscal que finaliza ______________.
+          </p>
+        </div>
+        <!--! FIN - dependencies  -->
+        <hr />
+        <!--! INICIO - balance  -->
+        <div class="balance__main-content">
+          <div class="balance__content">
+            <div class="balance__content-values">
+              <label for="">Fee de Preparacion</label>
+              <input type="text" />
+            </div>
+            <div class="balance__content-values">
+              <label for="">Deposito</label>
+              <input type="text" />
+            </div>
+            <div class="balance__content-values">
+              <label for="">Balance Debido</label>
+              <input type="text" />
+            </div>
+          </div>
+          <div class="balance__note">
+            <p>
+              NOTA: Identificacion vigente, Licencia de conducir, pasaporte USAm
+              otras emitidas por el estado, Agencia Estatal
+            </p>
+          </div>
+        </div>
+        <!--! FIN - balance  -->
+        <hr />
+        <div class="signature">
+          <div>
+            <label for="signature"
+              >Firma: <input type="text" id="signature"
+            /></label>
+          </div>
+          <div>
+            <label for="signature-date"
+              >Fecha: <input type="date" id="signature-date"
+            /></label>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
