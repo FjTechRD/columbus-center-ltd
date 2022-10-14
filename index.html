@@ -8,15 +8,15 @@
     <title>Tax Filter | Columbus Center LTD</title>
   </head>
   <body>
-    <header>
+    <header class="header__bg">
       <div class="logoColumbus">
         <img src="./img/logo ClmCenterLtd.png" alt="Columbus Center Logotipe" />
       </div>
       <p>927 Columbus Avenue New York, NY 10025</p>
       <p>Tel. No.: 212.678.1052 | Fax No.: 212 280.1909</p>
       <p>www.columbuscenterent.com</p>
-      <h1>TAX FILER’S PERSONAL DATA FORM</h1>
     </header>
+    <h1>FORMULARIO DE DATOS PERSONALES DEL FISCALIZADOR</h1>
     <main class="container">
       <form action="" class="data__form">
         <!--! INICIO-Datos Principales  -->
@@ -83,21 +83,21 @@
               <label for="second__telephone">Telefeno Secundario</label>
               <input type="number" id="second__telephone" />
             </div>
+            <div class="contac__data inp-position">
+              <label for="email">Correo Electronico</label>
+              <input type="email" id="email" />
+            </div>
           </div>
-        </div>
-        <div class="contac__data inp-position">
-          <label for="email">Correo Electronico</label>
-          <input type="email" id="email" />
         </div>
         <!--! FIN - Tel - Email  -->
         <hr />
         <!--! INICIO - Dirrecion  -->
         <div class="address__data">
-          <div class="adrres inp-position">
-            <label for="address">Dirección</label>
-            <input type="text" id="address" />
-          </div>
           <div class="order__form">
+            <div class="adrres inp-position">
+              <label for="address">Dirección</label>
+              <input type="text" id="address" />
+            </div>
             <div class="address__info inp-position">
               <label for="city">Ciudad</label>
               <input type="text" id="city" />
@@ -231,7 +231,7 @@
         <button class="btn" type="submit">Enviar</button>
       </form>
     </main>
-    <footer>
+    <footer class="header__bg">
       <h2>Columbus Center LTD</h2>
     </footer>
   </body>

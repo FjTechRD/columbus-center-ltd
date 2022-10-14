@@ -1,3 +1,5 @@
+/*! GENERALES */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +14,11 @@ body {
   text-align: center;
 }
 
+h1 {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
 hr {
   margin: 2rem;
 }
@@ -24,6 +31,19 @@ input[type="email"] {
   padding: 0.5rem;
   border-radius: 1rem;
 }
+
+.header__bg {
+  background-image: url(./img/bgEconomy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-size: 2rem;
+  padding: 2rem 0;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+/*! FORMULARIO */
 
 .logoColumbus img {
   width: 100%;
@@ -83,9 +103,28 @@ p {
 
 footer {
   margin-top: 4rem;
+  padding: 2rem 0;
+  background-color: blueviolet;
 }
 
 @media (min-width: 762px) {
+  h1 {
+    padding: 1rem 0;
+    font-size: 3.4rem;
+  }
+
+  form {
+    padding: 2rem 0;
+    background-color: #80808040;
+  }
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  input[type="email"] {
+    width: 70%;
+    padding: 0.6rem;
+    border-radius: 1rem;
+  }
   .data__form {
     display: flex;
     width: 80%;
@@ -102,6 +141,10 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  .logoColumbus img {
+    width: 60%;
+  }
+
   .depedencies__data {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -125,5 +168,19 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 1440px) {
+  h1 {
+    padding: 3rem 0;
+    font-size: 4rem;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .logoColumbus img {
+    width: 40%;
   }
 }
