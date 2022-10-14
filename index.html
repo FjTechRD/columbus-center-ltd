@@ -8,12 +8,16 @@
     <title>Tax Filter | Columbus Center LTD</title>
   </head>
   <body>
-    <main class="container">
-      <img src="./img/logo ClmCenterLtd.png" alt="Columbus Center Logotipe" />
+    <header>
+      <div class="logoColumbus">
+        <img src="./img/logo ClmCenterLtd.png" alt="Columbus Center Logotipe" />
+      </div>
       <p>927 Columbus Avenue New York, NY 10025</p>
       <p>Tel. No.: 212.678.1052 | Fax No.: 212.678.1551</p>
       <p>www.columbuscenterent.com</p>
       <h1>TAX FILER’S PERSONAL DATA FORM</h1>
+    </header>
+    <main class="container">
       <form action="" class="data__form">
         <!--! INICIO-Datos Principales  -->
         <div class="main__data">
@@ -136,7 +140,7 @@
             >
           </div>
           <br />
-          <div>
+          <div class="inp-position">
             <label for="tp-form">Tipo de Formulario</label>
             <input type="text" id="tp-form" />
           </div>
@@ -144,33 +148,44 @@
         <!--! FIN - CheckBox  -->
         <hr />
         <!--! INICIO - dependencies  -->
-        <h3>Dependencias</h3>
+
         <div class="depedencies__data">
+          <h3>Dependientes</h3>
           <div class="depen depen-name">
-            <h3>Name</h3>
-            <label for="">Nombre</label>
-            <textarea name="" id="" cols="20" rows="5"></textarea>
+            <h3>Nombre</h3>
+            <label for=""></label>
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
           </div>
           <div class="depen depen-ssn">
             <h3>SS No.</h3>
-            <label for="">Nombre</label>
-            <textarea name="" id="" cols="20" rows="5"></textarea>
+            <label for=""></label>
+            <input type="number" />
+            <input type="number" />
+            <input type="number" />
+            <input type="number" />
           </div>
-          <div class="depen depen-date">
+          <div class="depen depen-date inp-position">
             <h3>Fecha de Nac./ Relacion</h3>
-            <label for="">Nombre</label>
-            <textarea name="" id="" cols="20" rows="5"></textarea>
+            <label for=""></label>
+            <input type="date" />
+            <input type="date" />
+            <input type="date" />
+            <input type="date" />
           </div>
         </div>
-        <div>
+        <div class="text-fiscal-year">
           <p>
             Yo afirmo que la informacion que aparece en este documento es
             correcta y que yo tambien certifico que soy responsable por todos
             datos que aparecen en todos documentos relacionado a declaracion de
             inpuesto preparado por Columbus Center Enterprise Ltd. Toda
             informacion contenida en estos documentos son exclusivo para el ano
-            fiscal que finaliza ______________.
+            fiscal que finaliza
           </p>
+          <input type="date" />.
         </div>
 
         <!--! FIN - dependencies  -->
@@ -178,17 +193,17 @@
         <!--! INICIO - balance  -->
         <div class="balance__main-content">
           <div class="balance__content">
-            <div class="balance__content-values">
+            <div class="balance__content-values inp-position">
               <label for="">Fee de Preparacion</label>
-              <input type="text" />
+              <input type="number" />
             </div>
-            <div class="balance__content-values">
+            <div class="balance__content-values inp-position">
               <label for="">Deposito</label>
-              <input type="text" />
+              <input type="number" />
             </div>
-            <div class="balance__content-values">
+            <div class="balance__content-values inp-position">
               <label for="">Balance Debido</label>
-              <input type="text" />
+              <input type="number" />
             </div>
           </div>
           <div class="balance__note">
@@ -201,17 +216,16 @@
         <!--! FIN - balance  -->
         <hr />
         <div class="signature">
-          <div>
-            <label for="signature"
-              >Firma: <input type="text" id="signature"
-            /></label>
+          <div class="inp-position">
+            <label for="signature">Firma: </label>
+            <input type="text" id="signature" />
           </div>
-          <div>
-            <label for="signature-date"
-              >Fecha: <input type="date" id="signature-date"
-            /></label>
+          <div class="inp-position">
+            <label for="signature-date">Fecha: </label>
+            <input type="date" id="signature-date" />
           </div>
         </div>
+        <button type="submit">Enviar</button>
       </form>
     </main>
   </body>

@@ -16,63 +16,58 @@ hr {
   margin: 2rem;
 }
 
-.container {
-  min-height: 100vh;
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"] {
+  width: 80%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.logoColumbus img {
+  width: 100%;
+}
+
+header p {
+  text-align: center;
+}
+
+.data__form {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
-}
-
-.order__form {
-  gap: 1rem;
-  display: flex;
-}
-
-.persona__data {
-  display: flex;
 }
 
 .inp-position {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
-}
-
-/*! FORM STYLES */
-/*! MAIN DATA */
-/*! SPOUSE DATA */
-/*! CONTACT */
-/*! ADDRESS */
-/*! CHECKBOX */
-/*! DEPENDENCIES */
-/*! BALANCE */
-/*! SIGNATURE */
-
-.balance__main-content {
-  display: flex;
-  justify-content: space-evenly;
-}
-.balance__content {
-  width: 50%;
-}
-
-.balance__content-values {
   padding: 0.4rem;
+  align-items: center;
 }
 
-.balance__note {
-  width: 50%;
+.text-fiscal-year {
+  margin-top: 1rem;
 }
 
 .signature {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
-.depedencies__data {
-  display: flex;
+p {
+  text-align: justify;
+}
+
+@media (min-width: 762px) {
+  .data__form {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .inp-position {
+    display: flex;
+    padding: 0.4rem;
+    align-items: center;
+  }
 }
