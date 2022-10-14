@@ -47,8 +47,16 @@ header p {
   align-items: center;
 }
 
+.depedencies__data h3 {
+  padding: 1rem 0;
+}
+
+.depen {
+  padding: 1rem 0;
+}
+
 .text-fiscal-year {
-  margin-top: 1rem;
+  margin: 2rem 0;
 }
 
 .signature {
@@ -57,6 +65,24 @@ header p {
 
 p {
   text-align: justify;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn {
+  margin-top: 1rem;
+  border: none;
+  background-color: aqua;
+  padding: 2rem;
+  color: #fff;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  width: 10rem;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: 4rem;
 }
 
 @media (min-width: 762px) {
@@ -69,5 +95,35 @@ p {
     display: flex;
     padding: 0.4rem;
     align-items: center;
+  }
+  .order__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .depedencies__data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .depedencies__data :nth-child(1) {
+    grid-column: 1/2;
+  }
+  .depedencies__data :nth-child(2) {
+    grid-column: 2/3;
+  }
+  .depedencies__data :nth-child(3) {
+    grid-column: 3/4;
+  }
+  .balance__main-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .signature {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }

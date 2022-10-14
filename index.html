@@ -13,7 +13,7 @@
         <img src="./img/logo ClmCenterLtd.png" alt="Columbus Center Logotipe" />
       </div>
       <p>927 Columbus Avenue New York, NY 10025</p>
-      <p>Tel. No.: 212.678.1052 | Fax No.: 212.678.1551</p>
+      <p>Tel. No.: 212.678.1052 | Fax No.: 212 280.1909</p>
       <p>www.columbuscenterent.com</p>
       <h1>TAX FILER’S PERSONAL DATA FORM</h1>
     </header>
@@ -30,15 +30,16 @@
               <label for="last-name">Apellido</label>
               <input type="text" id="last-name" />
             </div>
-          </div>
-          <div class="order__form">
-            <div class="inp-position">
-              <label for="ssn">SS No.</label>
-              <input type="number" id="ssn" />
-            </div>
-            <div class="inp-position">
-              <label for="birdthay">Fecha de Nacimiento</label>
-              <input type="date" id="birdthay" />
+
+            <div class="order__form">
+              <div class="inp-position">
+                <label for="ssn">SS No.</label>
+                <input type="number" id="ssn" />
+              </div>
+              <div class="inp-position">
+                <label for="birdthay">Fecha de Nacimiento</label>
+                <input type="date" id="birdthay" />
+              </div>
             </div>
           </div>
         </div>
@@ -56,15 +57,16 @@
               <label for="spouse__last-name">Apellido Conyuge</label>
               <input type="text" id="spouse__last-name" />
             </div>
-          </div>
-          <div class="order__form">
-            <div class="inp-position">
-              <label for="spouse__ssn">SS No.</label>
-              <input type="number" id="spouse__ssn" />
-            </div>
-            <div class="inp-position">
-              <label for="spouse__birdthay">Fecha de Nacimiento</label>
-              <input type="date" id="spouse__birdthay" />
+
+            <div class="order__form">
+              <div class="inp-position">
+                <label for="spouse__ssn">SS No.</label>
+                <input type="number" id="spouse__ssn" />
+              </div>
+              <div class="inp-position">
+                <label for="spouse__birdthay">Fecha de Nacimiento</label>
+                <input type="date" id="spouse__birdthay" />
+              </div>
             </div>
           </div>
         </div>
@@ -114,27 +116,27 @@
         <hr />
         <!--! INICIO - CheckBox  -->
         <div class="checkbox__data">
-          <div>
-            <label
+          <div class="checkbox__pos">
+            <label class="lb__checkbox"
               ><input type="checkbox" id="cbox1" value="first_checkbox" />
               Casado/a</label
             >
-            <label
+            <label class="lb__checkbox"
               ><input type="checkbox" id="cbox2" value="second_checkbox" />
               Soltero/a</label
             >
-            <label
+            <label class="lb__checkbox"
               ><input type="checkbox" id="cbox2" value="third_checkbox" />
               Cabeza Familia</label
             >
-            <label
+            <label class="lb__checkbox"
               ><input
                 type="checkbox"
                 id="cbox2"
                 value="forth_checkbox"
               />QW</label
             >
-            <label
+            <label class="lb__checkbox"
               ><input type="checkbox" id="cbox2" value="fifth_checkbox" />Casado
               SP</label
             >
@@ -148,44 +150,45 @@
         <!--! FIN - CheckBox  -->
         <hr />
         <!--! INICIO - dependencies  -->
-
-        <div class="depedencies__data">
+        <div class="dependencias">
           <h3>Dependientes</h3>
-          <div class="depen depen-name">
-            <h3>Nombre</h3>
-            <label for=""></label>
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
+          <div class="depedencies__data">
+            <div class="depen depen-name">
+              <h3>Nombre</h3>
+              <label for=""></label>
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+            </div>
+            <div class="depen depen-ssn">
+              <h3>SS No.</h3>
+              <label for=""></label>
+              <input type="number" />
+              <input type="number" />
+              <input type="number" />
+              <input type="number" />
+            </div>
+            <div class="depen depen-date inp-position">
+              <h3>Fecha de Nac./ Relacion</h3>
+              <label for=""></label>
+              <input type="date" />
+              <input type="date" />
+              <input type="date" />
+              <input type="date" />
+            </div>
           </div>
-          <div class="depen depen-ssn">
-            <h3>SS No.</h3>
-            <label for=""></label>
-            <input type="number" />
-            <input type="number" />
-            <input type="number" />
-            <input type="number" />
+          <div class="text-fiscal-year">
+            <p>
+              Yo afirmo que la informacion que aparece en este documento es
+              correcta y que yo tambien certifico que soy responsable por todos
+              datos que aparecen en todos documentos relacionado a declaracion
+              de inpuesto preparado por Columbus Center Enterprise Ltd. Toda
+              informacion contenida en estos documentos son exclusivo para el
+              ano fiscal que finaliza
+            </p>
+            <input type="date" />.
           </div>
-          <div class="depen depen-date inp-position">
-            <h3>Fecha de Nac./ Relacion</h3>
-            <label for=""></label>
-            <input type="date" />
-            <input type="date" />
-            <input type="date" />
-            <input type="date" />
-          </div>
-        </div>
-        <div class="text-fiscal-year">
-          <p>
-            Yo afirmo que la informacion que aparece en este documento es
-            correcta y que yo tambien certifico que soy responsable por todos
-            datos que aparecen en todos documentos relacionado a declaracion de
-            inpuesto preparado por Columbus Center Enterprise Ltd. Toda
-            informacion contenida en estos documentos son exclusivo para el ano
-            fiscal que finaliza
-          </p>
-          <input type="date" />.
         </div>
 
         <!--! FIN - dependencies  -->
@@ -225,8 +228,11 @@
             <input type="date" id="signature-date" />
           </div>
         </div>
-        <button type="submit">Enviar</button>
+        <button class="btn" type="submit">Enviar</button>
       </form>
     </main>
+    <footer>
+      <h2>Columbus Center LTD</h2>
+    </footer>
   </body>
 </html>
